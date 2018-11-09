@@ -1,0 +1,313 @@
+
+/*================= FONT (OPEN SANS) IMPORT FROM GOOGLE FONTS =================*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
+
+
+/*=============================== COMMON BEGIN ================================*/
+
+* {
+	margin:0; 
+	padding:0;
+}
+
+:focus {
+	outline:0;
+}
+
+img {
+	border: none;
+}
+
+html,
+body {
+	width:100%;
+	height:100%;
+	-webkit-text-size-adjust: none;
+}
+
+body {
+	background: #000;
+	background-size:cover;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 16px;
+	line-height:1.6;
+	color: #fff;
+	text-align:center;
+}
+
+ol,
+ul {
+	list-style:none;
+}
+
+a,
+a:hover{
+	color:#444;
+	text-decoration:none;
+	-webkit-transition: all 0.25s ease-out;
+	-moz-transition: all 0.25s ease-out;
+	-ms-transition: all 0.25s ease-out;
+	-o-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+}
+
+.clear{
+	clear:both;
+}
+
+.logo{
+	padding:60px;
+	text-align:center;
+	position:relative;
+	font-size: 70px;
+}
+.logo img{
+	position:relative;
+	z-index:2;
+}
+.logo .glow{
+	position:absolute;
+	z-index:1;
+	top:0;
+	bottom:0;
+	left:50%;
+	margin-left:-200px;
+	width:400px;
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(0,171,255,0.18) 0%, rgba(0,171,255,0) 70%, rgba(0,171,255,0) 73%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,171,255,0.18)), color-stop(70%,rgba(0,171,255,0)), color-stop(73%,rgba(0,171,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,171,255,0.18) 0%,rgba(0,171,255,0) 70%,rgba(0,171,255,0) 73%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  rgba(0,171,255,0.18) 0%,rgba(0,171,255,0) 70%,rgba(0,171,255,0) 73%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(0,171,255,0.18) 0%,rgba(0,171,255,0) 70%,rgba(0,171,255,0) 73%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  rgba(0,171,255,0.18) 0%,rgba(0,171,255,0) 70%,rgba(0,171,255,0) 73%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e00abff', endColorstr='#0000abff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.logo-small-text{
+    font-size: 12px;
+    position: absolute;
+    z-index: 1;
+    top: 160px;
+    color: #daf3ff;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+}
+
+.slogan{
+	text-transform:uppercase;
+	color:#fff;
+	padding:0 0 25px 0;
+	margin:0;
+	text-align:center;
+	font-size:30px;
+	font-weight:300;
+	letter-spacing:3px;
+	text-shadow: 0px 0px 5px #00aeff;
+}
+
+.slogan-dark{
+	color:#bbb;
+	text-shadow: 0px 0px 5px #888;
+	-moz-animation: electro-blink 3s linear 1s infinite;
+}
+
+.slogan-demo{
+	color:#FCF;
+	text-shadow: 0px 0px 5px #F0C;
+	padding-top:80px;
+}
+
+@-webkit-keyframes electro-blink { 
+	0%,50%,54%,58%,90%,94%,100% {opacity:1;}
+	52%,92% {opacity:0.4;}
+	56%,96% {opacity:0.1;}
+}
+
+@keyframes electro-blink { 
+	0%,50%,54%,58%,90%,94%,100% {opacity:1;}
+	52%,92% {opacity:0.4;}
+	56%,96% {opacity:0.1;}
+}
+
+.wrap{
+	margin: 0 auto;
+	max-width:1200px;
+	margin-top: 60px;
+}
+
+
+.half-column{
+	width:550px;
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+
+ul{
+	display:block;
+	width:100%;
+	border-top:1px solid #333;
+}
+
+ul:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+ul li{
+	display:block;
+	float:left;
+	width: 100%;
+	margin:80px 50px 0 0;
+	text-align:center;
+	overflow:hidden;
+}
+ul li#image-min,
+ul li#slider-min,
+ul li#typed-min,
+ul li#video-min{
+	margin-right:0;
+}
+
+ul li img{
+	max-width:100%;
+	height:auto;
+	margin:0;
+	padding:0;
+	border:0;
+	width: 100%;
+	display:block;
+}
+
+ul.platform{
+	display:table;
+	border-top:0;
+}
+
+ul.platform li{
+	display:table-cell;
+	margin:0;
+	height:50px;
+	width:33%;
+	border-right:1px solid #222;
+	box-sizing:border-box;
+}
+ul.platform li:last-child{
+	border-right:0;
+	width:34%;
+}
+
+ul.platform li a{
+	display:block;
+	height:100%;
+	width:100%;
+	background:#444;
+	text-align:center;
+	line-height:50px;
+	color:#fff;
+	font-size:21px;
+}
+
+ul.platform .ios:hover{
+	background:#222;
+}
+ul.platform .android:hover{
+	background:#669900;
+}
+
+ul.platform .win:hover{
+	background:#68217a;
+}
+
+
+ul li a.name{
+	display:inline-block;
+	font-size:20px;
+	font-weight:bold;
+	color:#444;
+	padding: 20px 0 0 0;
+	margin:0;
+}
+
+ul li:hover a.name{
+	color:#FFF;
+}
+
+.buy-btn{
+	display:block;
+	color:#fff;
+	padding: 5px 0;
+	width: 290px;
+	margin: 0 auto;
+	font-size: 30px;
+	margin-top: 100px;
+	background: rgba(7, 239, 164, 0.8);
+	text-shadow: 0px 0px 5px #0C3;
+	box-shadow:0px 0px 5px #0C3;
+}
+.buy-btn:hover{
+	color:#fff;
+        background: rgba(7, 239, 164, 0.7);
+}
+
+.copyright{
+	padding: 50px 0;
+	text-align:center;
+	color:#888;
+}
+.copyright a{
+	color: inherit;
+	border-bottom:1px solid #444;
+}
+.copyright a:hover{
+	color:#fff;
+}
+
+ul.fivecol li{
+	width:220px;
+	margin:80px 25px 0 0;
+}
+ul.fivecol li:last-child{
+	margin-right:0;
+}
+
+
+@media (max-width: 1200px) {
+	.wrap{ max-width:600px;}
+	.half-column{
+		width:100%;
+		float:none;
+	}
+	.right{ float:none;}
+	ul li{margin:60px 100px 0 0;}
+	.slogan-dark{ margin-top:60px;}
+}
+
+@media (max-width: 600px) {
+	.wrap{ max-width:100%;}
+	ul li{
+		margin:40px auto 0 auto;
+		float:none;
+	}
+	ul li a.name{padding: 15px 0 0 0;}
+	
+	ul li#image-min,
+	ul li#slider-min,
+	ul li#typed-min,
+	ul li#video-min{margin-right:auto;}
+	
+	.buy-btn{
+		margin:40px 20px 0 20px;
+		font-size:28px;
+	}
+	.logo .glow{
+		margin-left:-125px;
+		width:250px;
+	}
+	.copyright{padding:50px 0;}
+
+}
